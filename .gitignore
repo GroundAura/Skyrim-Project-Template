@@ -1,5 +1,8 @@
 .build/
 .idea/closed/
+.idea/hidden/
+.idea/licensed/
+.idea/secret/
 .release/
 build/
 release/
