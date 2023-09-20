@@ -6,4 +6,4 @@ This mod can be found on [Nexus Mods](https://www.nexusmods.com/skyrimspecialedi
 
 Releases can also be downloaded on [here on GitHub](https://github.com/GroundAura/Project-Template/releases).
 
-Additional information can be found on the [GitHub wiki](https://github.com/GroundAura/Project-Template/wiki).
+Additional information can be found on the [GitHub Wiki](https://github.com/GroundAura/Project-Template/wiki).
