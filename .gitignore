@@ -1,3 +1,5 @@
+.build/
 .idea/closed/
 .release/
-build
+build/
+release/
