@@ -7,6 +7,6 @@ That is the best place to find installation information, comment, report bugs, a
 
 Releases can also be downloaded on [here on GitHub](https://github.com/GroundAura/Project-Template/releases).
 
-A changelog can be found [here](https://github.com/GroundAura/Project-Template/docs/CHANGELOG.md).
+A changelog can be found [here](https://github.com/GroundAura/Project-Template/blob/main/docs/CHANGELOG.md).
 
 Additional information can be found on the [GitHub Wiki](https://github.com/GroundAura/Project-Template/wiki).
