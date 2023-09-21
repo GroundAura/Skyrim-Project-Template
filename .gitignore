@@ -1,8 +1,13 @@
-.build/
+.build/*.7z
+.build/*.rar
+.build/*.zip
 .idea/closed/
 .idea/hidden/
 .idea/licensed/
+.idea/old/
 .idea/secret/
 .release/
-build/
+build/*.7z
+build/*.rar
+build/*.zip
 release/
