@@ -1,6 +1,6 @@
-name: Wiki Sync
+name: Wiki Sync (Manual)
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   build:
