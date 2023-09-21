@@ -1,4 +1,4 @@
-name: Wiki
+name: Wiki Sync
 
 on: [push]
 
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       # Additional steps to generate documentation in "docs/wiki" directory
-      - name: Upload Documentation to Wiki
+      - name: Upload docs/wiki to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
           path: "docs/wiki"
