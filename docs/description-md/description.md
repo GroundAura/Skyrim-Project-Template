@@ -1,30 +1,30 @@
-# **ProjectName**
+# \[center\]**\[color=#ffd966\]ProjectName\[/color\]**\[/center\]
 
-## **Subtitle**
+## \[center\]**\[color=#93c47d\]Subtitle\[/color\]**\[/center\]
 
-\[center\]
-[![kofi](https://github.com/doodlum/nexusmods-widgets/blob/main/Ko-fi_40px_60fps.png?raw=true)](https://ko-fi.com/groundaura)          [![linktree](https://i.imgur.com/jOQE4n8.png)](https://linktr.ee/groundaura)          [![discord](https://github.com/doodlum/nexusmods-widgets/blob/main/Discord_40px.png?raw=true)](https://discord.gg/zft8DmbfKv)
-\[/center\]
+\[center\][![kofi](https://github.com/doodlum/nexusmods-widgets/blob/main/Ko-fi_40px_60fps.png?raw=true)](https://ko-fi.com/groundaura)          [![linktree](https://i.imgur.com/jOQE4n8.png)](https://linktr.ee/groundaura)          [![discord](https://github.com/doodlum/nexusmods-widgets/blob/main/Discord_40px.png?raw=true)](https://discord.gg/zft8DmbfKv)\[/center\]
 
-## **Overview**
+## \[center\]**\[color=#ffd966\]Overview\[/color\]**\[/center\]
 
-## **Installation**
+## \[center\]**\[color=#ffd966\]Installation\[/color\]**\[/center\]
 
-## **Compatibility**
+## \[center\]**\[color=#ffd966\]Compatibility\[/color\]**\[/center\]
 
-## **FAQ**
+## \[center\]**\[color=#ffd966\]FAQ\[/color\]**\[/center\]
 
-## **Credits**
+## **\[color=#ffd966\]Credits\[/color\]**
 
 [spoiler]
 
-### **Assets:**
+### **\[color=#93c47d\]Assets:\[/color\]**
 
-### **Mods Referenced:**
+- .
+
+### **\[color=#93c47d\]Mods Referenced:\[/color\]**
 
 - [ModName](https://www.nexusmods.com/skyrimspecialedition/mods/) by [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/97658973).
 
-### **Modpage Resources:**
+### **\[color=#93c47d\]Modpage Resources:\[/color\]**
 
 - Font from [Sovngarde - A Nordic Font](https://www.nexusmods.com/skyrimspecialedition/mods/386) by [Koveich](https://www.nexusmods.com/skyrimspecialedition/users/34763925).
 
@@ -32,7 +32,7 @@
 
 - Widgets from [nexusmods-widgets](https://github.com/doodlum/nexusmods-widgets) by [doodlum](https://www.nexusmods.com/skyrimspecialedition/users/28038035)
 
-### **Tools Used:**
+### **\[color=#93c47d\]Tools Used:\[/color\]**
 
 - [Alphabetize Tool](https://wordcounter.net/alphabetize)
 
@@ -68,10 +68,10 @@
 
 - [WinMerge](https://winmerge.org)
 
-### **Special Thanks To:**
+### **\[color=#93c47d\]Special Thanks To:\[/color\]**
 
 - [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/97658973).
 
 [/spoiler]
 
-### **[\[color=#c27ba0\]> > > Check Out My Other Mods! < < <\[/color\]](https://www.nexusmods.com/users/97658973)**
+## \[center\]**[\[color=#c27ba0\]> > > Check Out My Other Mods! < < <\[/color\]](https://www.nexusmods.com/users/97658973)**\[/center\]
