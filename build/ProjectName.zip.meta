@@ -1,7 +1,5 @@
 [General]
-gameName=SkyrimSE
 name=ProjectName (pre-release) []
 modName=ProjectName
-version=1.0.0.rc1
 installed=false
 uninstalled=false
