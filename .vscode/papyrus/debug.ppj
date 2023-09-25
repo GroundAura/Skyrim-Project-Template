@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<PapyrusProject xmlns="PapyrusProject.xsd"
+	Flags="TESV_Papyrus_Flags.flg"
+	Game="sse"
+	Output="..\..\build\papyrus\debug"
+	Optimize="false"
+	Release="false"
+	Anonymize="true"
+	Final="false">
+	<Imports>
+		<!--
+			Skyrim_Install_Dir/Data/Scripts/Source
+			Ensure you have installed the Skyrim SE Creation Kit and opened it at least once to allow it to extract the scripts
+			e.g. C:\Games\Steam\Skyrim Special Edition\Data\Source\Scripts
+		-->
+		<!-- <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Scripts\Source</Import> -->
+		<!-- <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts</Import> -->
+		<Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\Creation Kit - Source\Scripts\Source</Import>
+		<Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\Creation Kit - Source\Source\Scripts</Import>
+
+		<!--
+			SKSE_Install_Dir/Data/Scripts/Source
+			If installing SKSE directly in your Skyrim root folder, then SKSE_Install_Dir will be the same as Skyrim_Install_dir
+			e.g. C:\Games\Steam\Skyrim Special Edition\Data\Source\Scripts
+		-->
+		<!-- <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Scripts\Source</Import> -->
+		<!-- <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts</Import> -->
+		<!-- <Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\SKSE Scripts (SE 1.5.97)\Scripts\Source</Import> -->
+		<!-- <Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\SKSE Scripts (SE 1.5.97)\Source\Scripts</Import> -->
+		<Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\SKSE Scripts (AE 1.6.640)\Scripts\Source</Import>
+		<!-- <Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\SKSE Scripts (AE 1.6.640)\Source\Scripts</Import> -->
+
+		<!--
+			Mod_Install_Dir/Scripts/Source
+			Additional relevant mods
+			e.g. C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\ModName\Source\Scripts
+		-->
+		<Import>C:\Coding\GitHub\Skyrim\Exit-9B\MCM Helper SDK\Source\Scripts</Import>
+		<!-- <Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\ModName\Scripts\Source</Import> -->
+		<!-- <Import>C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\ModName\Source\Scripts</Import> -->
+		</Imports>
+	<Folders>
+		<!-- <Folder>..\..\src\</Folder> -->
+		<Folder>..\..\dist\ProjectName\Source\scripts\</Folder>
+		<!-- <Folder>..\..\dist\ProjectName\Source\source\scripts\</Folder> -->
+	</Folders>
+</PapyrusProject>
