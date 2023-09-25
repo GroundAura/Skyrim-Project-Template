@@ -3,7 +3,7 @@ name: Wiki Sync (Auto)
 on:
   push:
     paths:
-      - 'docs\wiki\'
+      - 'docs/wiki/**'
 
 jobs:
   build:
