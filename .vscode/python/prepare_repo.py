@@ -110,8 +110,13 @@ new_title_short_xml = "______"
 
 
 
+print("Beginning preparing repository.")
+
+
+
 # REPLACE TEXT
 
+print("Replacing Text: Starting...")
 print(os.getcwd())
 
 os.chdir("./_root")
@@ -481,9 +486,13 @@ os.chdir("../..")
 print(os.getcwd())
 
 
+print("Replacing Text: Complete!")
+
+
 
 # RENAME FILES
 
+print("Renaming Files: Starting...")
 # print(os.getcwd())
 
 
@@ -534,9 +543,13 @@ os.chdir("../../../..")
 print(os.getcwd())
 
 
+print("Renaming Files: Complete!")
+
+
 
 # RENAME FOLDERS
 
+print("Renaming Directories: Starting...")
 # print(os.getcwd())
 
 
@@ -556,5 +569,12 @@ shutil.move(old_name_folder, new_name_folder)
 
 os.chdir("..")
 print(os.getcwd())
+
+
+print("Renaming Directories: Complete!")
+
+
+
+print("Done preparing repository!")
 
 
