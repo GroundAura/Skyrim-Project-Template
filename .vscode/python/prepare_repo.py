@@ -306,11 +306,11 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
 print(os.getcwd())
 
-with open(r'' + old_name_plugin + '_ENGLISH.txt', 'r') as file:
+with open(r'' + old_name_plugin + '_ENGLISH.txt', 'r', encoding='utf-16-le') as file:
 	data = file.read()
 	data = data.replace(old_name_plugin_short, new_name_plugin_short)
 	data = data.replace(old_title, new_title)
-with open(r'' + old_name_plugin + '_ENGLISH.txt', 'w') as file:
+with open(r'' + old_name_plugin + '_ENGLISH.txt', 'w', encoding='utf-16-le') as file:
 	file.write(data)
 
 os.chdir("../../../../..")
@@ -355,18 +355,18 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/fomod")
 print(os.getcwd())
 
-with open(r'info.xml', 'r') as file:
+with open(r'info.xml', 'r', encoding='utf-16-le') as file:
 	data = file.read()
 	data = data.replace(old_title_xml, new_title_xml)
 	data = data.replace(old_author_display, new_author_display)
 	data = data.replace(old_id_nexus, new_id_nexus)
-with open(r'info.xml', 'w') as file:
+with open(r'info.xml', 'w', encoding='utf-16-le') as file:
 	file.write(data)
 
-with open(r'info.xml', 'r') as file:
+with open(r'ModuleConfig.xml', 'r', encoding='utf-16-le') as file:
 	data = file.read()
 	data = data.replace(old_title_xml, new_title_xml)
-with open(r'info.xml', 'w') as file:
+with open(r'ModuleConfig.xml', 'w', encoding='utf-16-le') as file:
 	file.write(data)
 
 os.chdir("../../..")
