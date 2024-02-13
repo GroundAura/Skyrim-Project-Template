@@ -112,6 +112,36 @@ new_title_short_xml = "______"
 
 # REPLACE TEXT
 
+#os.chdir("./.github")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+#os.chdir("./.github/workflows")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+#os.chdir("./.idea")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+#os.chdir("./.idea/general")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+#os.chdir("./.vscode")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
 os.chdir("./.vscode/commandline")
 print(os.getcwd())
 
@@ -163,8 +193,48 @@ print(os.getcwd())
 os.chdir("./.vscode/papyrus")
 print(os.getcwd())
 
+with open(r'README.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_folder, new_name_folder)
+with open(r'README.md', 'w') as file:
+	file.write(data)
+
+with open(r'debug.ppj', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_folder, new_name_folder)
+	data = data.replace(old_path_MO2Mods, new_path_MO2Mods)
+	data = data.replace(old_path_PapyrusCK, new_path_PapyrusCK)
+	data = data.replace(old_path_PapyrusSKSE, new_path_PapyrusSKSE)
+	data = data.replace(old_path_PapyrusMCMHelper, new_path_PapyrusMCMHelper)
+with open(r'debug.ppj', 'w') as file:
+	file.write(data)
+
+with open(r'release.ppj', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_folder, new_name_folder)
+	data = data.replace(old_path_MO2Mods, new_path_MO2Mods)
+	data = data.replace(old_path_PapyrusCK, new_path_PapyrusCK)
+	data = data.replace(old_path_PapyrusSKSE, new_path_PapyrusSKSE)
+	data = data.replace(old_path_PapyrusMCMHelper, new_path_PapyrusMCMHelper)
+with open(r'release.ppj', 'w') as file:
+	file.write(data)
+
 os.chdir("../..")
 print(os.getcwd())
+
+
+#os.chdir("./.vscode/python")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./build")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
 
 
 os.chdir("./build/MO2")
@@ -179,6 +249,133 @@ with open(r'{ZipName}' + '.zip.meta', 'w') as file:
 
 os.chdir("../..")
 print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder)
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "Base")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "Base/interface")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "Base/interface/translations")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "Base/MCM")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "Base/MCM/Config")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "Base/MCM/Config" + old_name_plugin)
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "fomod")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "fomod/images")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "Source")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "Source/scripts")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+os.chdir("./docs")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+os.chdir("./docs/description-md")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+#os.chdir("./docs/description-nexus")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./docs/images")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./docs/images/brand")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+#os.chdir("./docs/images/screenshots")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
+
+
+os.chdir("./docs/wiki")
+print(os.getcwd())
+
+os.chdir("../..")
+print(os.getcwd())
+
 
 
 
