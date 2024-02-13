@@ -56,7 +56,7 @@
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
-            "label": "Build to \\build",
+            "label": "Build to build\\",
             "group": "build",
             "dependsOn": [
                 "Compile Papyrus Scripts (Release)",
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "label": "Build to \\dist",
+            "label": "Build to dist\\",
             "group": "build",
             "dependsOn": [
                 "Compile Papyrus Scripts (Release)",
@@ -75,7 +75,7 @@
             ]
         },
         {
-            "label": "Build to MO2\\downloads",
+            "label": "Build to MO2\\downloads\\",
             "group": "build",
             "dependsOn": [
                 "Compile Papyrus Scripts (Release)",
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "label": "Build to MO2\\mods",
+            "label": "Build to MO2\\mods\\",
             "group": "build",
             "dependsOn": [
                 "Compile Papyrus Scripts (Release)",
@@ -104,7 +104,7 @@
             ]
         },
         {
-            "label": "Translate docs for Nexus",
+            "label": "Build to docs\\description-nexus\\",
             "group": "build",
             "dependsOn": [
                 "md2nexus.bat"
