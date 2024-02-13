@@ -114,6 +114,29 @@ new_title_short_xml = "______"
 
 print(os.getcwd())
 
+os.chdir("./_root")
+print(os.getcwd())
+
+with open(r'LICENSE.txt', 'r') as file:
+	data = file.read()
+	data = data.replace(old_license_holder, new_license_holder)
+	data = data.replace(old_license_year, new_license_year)
+with open(r'LICENSE.txt', 'w') as file:
+	file.write(data)
+
+with open(r'README.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+	data = data.replace(old_author_display, new_author_display)
+	data = data.replace(old_id_nexus, new_id_nexus)
+	data = data.replace(old_author_github, new_author_github)
+	data = data.replace(old_id_github, new_id_github)
+with open(r'README.md', 'w') as file:
+	file.write(data)
+
+os.chdir("..")
+print(os.getcwd())
+
 
 #os.chdir("./.github")
 #print(os.getcwd())
@@ -266,11 +289,11 @@ print(os.getcwd())
 #print(os.getcwd())
 
 
-os.chdir("./dist/" + old_name_folder + "/Base")
-print(os.getcwd())
-
-os.chdir("../../..")
-print(os.getcwd())
+#os.chdir("./dist/" + old_name_folder + "/Base")
+#print(os.getcwd())
+#
+#os.chdir("../../..")
+#print(os.getcwd())
 
 
 #os.chdir("./dist/" + old_name_folder + "/Base/interface")
@@ -282,6 +305,13 @@ print(os.getcwd())
 
 os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
 print(os.getcwd())
+
+with open(r'' + old_name_plugin + '_ENGLISH.txt', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_plugin_short, new_name_plugin_short)
+	data = data.replace(old_title, new_title)
+with open(r'' + old_name_plugin + '_ENGLISH.txt', 'w') as file:
+	file.write(data)
 
 os.chdir("../../../../..")
 print(os.getcwd())
@@ -304,12 +334,40 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config/" + old_name_plugin)
 print(os.getcwd())
 
+with open(r'config.json', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_plugin, new_name_plugin)
+	data = data.replace(old_name_plugin_short, new_name_plugin_short)
+with open(r'config.json', 'w') as file:
+	file.write(data)
+
 os.chdir("../../../../../..")
 print(os.getcwd())
 
 
+#os.chdir("./dist/" + old_name_folder + "/Base/scripts")
+#print(os.getcwd())
+#
+#os.chdir("../../../..")
+#print(os.getcwd())
+
+
 os.chdir("./dist/" + old_name_folder + "/fomod")
 print(os.getcwd())
+
+with open(r'info.xml', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title_xml, new_title_xml)
+	data = data.replace(old_author_display, new_author_display)
+	data = data.replace(old_id_nexus, new_id_nexus)
+with open(r'info.xml', 'w') as file:
+	file.write(data)
+
+with open(r'info.xml', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title_xml, new_title_xml)
+with open(r'info.xml', 'w') as file:
+	file.write(data)
 
 os.chdir("../../..")
 print(os.getcwd())
@@ -332,6 +390,12 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Source/scripts")
 print(os.getcwd())
 
+with open(r'' + old_name_plugin_short + '_MCM.psc', 'r') as file:
+	data = file.read()
+	data = data.replace(old_name_plugin_short, new_name_plugin_short)
+with open(r'' + old_name_plugin_short + '_MCM.psc', 'w') as file:
+	file.write(data)
+
 os.chdir("../../../..")
 print(os.getcwd())
 
@@ -339,15 +403,21 @@ print(os.getcwd())
 os.chdir("./docs")
 print(os.getcwd())
 
+with open(r'CHANGELOG.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+with open(r'CHANGELOG.md', 'w') as file:
+	file.write(data)
+
 os.chdir("..")
 print(os.getcwd())
 
 
-os.chdir("./docs/description-md")
-print(os.getcwd())
-
-os.chdir("../..")
-print(os.getcwd())
+#os.chdir("./docs/description-md")
+#print(os.getcwd())
+#
+#os.chdir("../..")
+#print(os.getcwd())
 
 
 #os.chdir("./docs/description-nexus")
@@ -380,6 +450,20 @@ print(os.getcwd())
 
 os.chdir("./docs/wiki")
 print(os.getcwd())
+
+with open(r'_Sidebar.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+	data = data.replace(old_author_github, new_author_github)
+	data = data.replace(old_id_github, new_id_github)
+with open(r'_Sidebar.md', 'w') as file:
+	file.write(data)
+
+with open(r'Home.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+with open(r'Home.md', 'w') as file:
+	file.write(data)
 
 os.chdir("../..")
 print(os.getcwd())
