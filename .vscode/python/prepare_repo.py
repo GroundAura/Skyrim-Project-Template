@@ -112,11 +112,15 @@ new_title_short_xml = "______"
 
 # REPLACE TEXT
 
+print(os.getcwd())
+
+
 #os.chdir("./.github")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("..")
 #print(os.getcwd())
+
 
 #os.chdir("./.github/workflows")
 #print(os.getcwd())
@@ -124,11 +128,13 @@ new_title_short_xml = "______"
 #os.chdir("../..")
 #print(os.getcwd())
 
+
 #os.chdir("./.idea")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("..")
 #print(os.getcwd())
+
 
 #os.chdir("./.idea/general")
 #print(os.getcwd())
@@ -136,11 +142,13 @@ new_title_short_xml = "______"
 #os.chdir("../..")
 #print(os.getcwd())
 
+
 #os.chdir("./.vscode")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("..")
 #print(os.getcwd())
+
 
 os.chdir("./.vscode/commandline")
 print(os.getcwd())
@@ -233,18 +241,18 @@ print(os.getcwd())
 #os.chdir("./build")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("..")
 #print(os.getcwd())
 
 
 os.chdir("./build/MO2")
 print(os.getcwd())
 
-with open(r'{ZipName}' + '.zip.meta', 'r') as file:
+with open(r'' + old_name_zip + '.zip.meta', 'r') as file:
 	data = file.read()
 	data = data.replace(old_name_mo2_test, new_name_mo2_test)
 	data = data.replace(old_title, new_title)
-with open(r'{ZipName}' + '.zip.meta', 'w') as file:
+with open(r'' + old_name_zip + '.zip.meta', 'w') as file:
 	file.write(data)
 
 os.chdir("../..")
@@ -258,80 +266,80 @@ print(os.getcwd())
 #print(os.getcwd())
 
 
-os.chdir("./dist/" + old_name_folder + "Base")
+os.chdir("./dist/" + old_name_folder + "/Base")
 print(os.getcwd())
 
-os.chdir("../..")
+os.chdir("../../..")
 print(os.getcwd())
 
 
-#os.chdir("./dist/" + old_name_folder + "Base/interface")
+#os.chdir("./dist/" + old_name_folder + "/Base/interface")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("../../../..")
 #print(os.getcwd())
 
 
-os.chdir("./dist/" + old_name_folder + "Base/interface/translations")
+os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
 print(os.getcwd())
 
-os.chdir("../..")
+os.chdir("../../../../..")
 print(os.getcwd())
 
 
-#os.chdir("./dist/" + old_name_folder + "Base/MCM")
+#os.chdir("./dist/" + old_name_folder + "/Base/MCM")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("../../../..")
 #print(os.getcwd())
 
 
-#os.chdir("./dist/" + old_name_folder + "Base/MCM/Config")
-#print(os.getcwd())
-#
-#os.chdir("../..")
-#print(os.getcwd())
-
-
-os.chdir("./dist/" + old_name_folder + "Base/MCM/Config" + old_name_plugin)
-print(os.getcwd())
-
-os.chdir("../..")
-print(os.getcwd())
-
-
-os.chdir("./dist/" + old_name_folder + "fomod")
-print(os.getcwd())
-
-os.chdir("../..")
-print(os.getcwd())
-
-
-#os.chdir("./dist/" + old_name_folder + "fomod/images")
+#os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("../../../../..")
 #print(os.getcwd())
 
 
-#os.chdir("./dist/" + old_name_folder + "Source")
-#print(os.getcwd())
-#
-#os.chdir("../..")
-#print(os.getcwd())
-
-
-os.chdir("./dist/" + old_name_folder + "Source/scripts")
+os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config/" + old_name_plugin)
 print(os.getcwd())
 
-os.chdir("../..")
+os.chdir("../../../../../..")
+print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "/fomod")
+print(os.getcwd())
+
+os.chdir("../../..")
+print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "/fomod/images")
+#print(os.getcwd())
+#
+#os.chdir("../../../..")
+#print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "/Source")
+#print(os.getcwd())
+#
+#os.chdir("../../..")
+#print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "/Source/scripts")
+print(os.getcwd())
+
+os.chdir("../../../..")
 print(os.getcwd())
 
 
 os.chdir("./docs")
 print(os.getcwd())
 
-os.chdir("../..")
+os.chdir("..")
 print(os.getcwd())
 
 
@@ -359,14 +367,14 @@ print(os.getcwd())
 #os.chdir("./docs/images/brand")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("../../..")
 #print(os.getcwd())
 
 
 #os.chdir("./docs/images/screenshots")
 #print(os.getcwd())
 #
-#os.chdir("../..")
+#os.chdir("../../..")
 #print(os.getcwd())
 
 
@@ -378,10 +386,9 @@ print(os.getcwd())
 
 
 
-
 # RENAME FOLDERS
 
-print(os.getcwd())
+# print(os.getcwd())
 
 # os.chdir("./dist")
 # (rename folder)
@@ -394,6 +401,9 @@ print(os.getcwd())
 
 
 # RENAME FILES
+
+# print(os.getcwd())
+
 
 os.chdir("./build/MO2")
 print(os.getcwd())
