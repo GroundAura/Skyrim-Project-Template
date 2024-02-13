@@ -1,7 +1,7 @@
 import os
 #import shutil
 #from pathlib import Path
-from pathlib2 import Path
+# from pathlib2 import Path
 #from fileinput import FileInput
 
 
@@ -110,60 +110,6 @@ new_title_short_xml = "______"
 
 
 
-# RENAME FOLDERS
-
-print(os.getcwd())
-
-# os.chdir("./dist")
-# (rename folder)
-# old_name_folder = new_name_folder
-
-# os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
-# (rename folder)
-# old_name_plugin = new_name_plugin
-
-
-
-# RENAME FILES
-
-os.chdir("./build/MO2")
-print(os.getcwd())
-
-os.rename(old_name_zip + ".zip.meta", new_name_zip + ".zip.meta")
-
-os.chdir("../..")
-print(os.getcwd())
-
-
-os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
-print(os.getcwd())
-
-os.rename(old_name_plugin + "_ENGLISH.txt", new_name_plugin + "_ENGLISH.txt")
-
-os.chdir("../../../../..")
-print(os.getcwd())
-
-
-os.chdir("./dist/" + old_name_folder + "/Base")
-print(os.getcwd())
-
-os.rename(old_name_plugin + ".esp", new_name_plugin + ".esp")
-os.rename(old_name_plugin + ".esl", new_name_plugin + ".esl")
-os.rename(old_name_plugin + ".esm", new_name_plugin + ".esm")
-
-os.chdir("../../..")
-print(os.getcwd())
-
-os.chdir("./dist/" + old_name_folder + "/Source/scripts")
-print(os.getcwd())
-
-os.rename(old_name_plugin + "MCM.psc", new_name_plugin + "MCM.psc")
-
-os.chdir("../../../..")
-print(os.getcwd())
-
-
-
 # REPLACE TEXT
 
 os.chdir("./.vscode/commandline")
@@ -224,14 +170,68 @@ print(os.getcwd())
 os.chdir("./build/MO2")
 print(os.getcwd())
 
-with open(r'new_name_zip' + '.zip.meta', 'r') as file:
+with open(r'{ZipName}' + '.zip.meta', 'r') as file:
 	data = file.read()
 	data = data.replace(old_name_mo2_test, new_name_mo2_test)
 	data = data.replace(old_title, new_title)
-with open(r'new_name_zip + ".zip.meta"', 'w') as file:
+with open(r'{ZipName}' + '.zip.meta', 'w') as file:
 	file.write(data)
 
 os.chdir("../..")
+print(os.getcwd())
+
+
+
+# RENAME FOLDERS
+
+print(os.getcwd())
+
+# os.chdir("./dist")
+# (rename folder)
+# old_name_folder = new_name_folder
+
+# os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
+# (rename folder)
+# old_name_plugin = new_name_plugin
+
+
+
+# RENAME FILES
+
+os.chdir("./build/MO2")
+print(os.getcwd())
+
+os.rename(old_name_zip + ".zip.meta", new_name_zip + ".zip.meta")
+
+os.chdir("../..")
+print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
+print(os.getcwd())
+
+os.rename(old_name_plugin + "_ENGLISH.txt", new_name_plugin + "_ENGLISH.txt")
+
+os.chdir("../../../../..")
+print(os.getcwd())
+
+
+os.chdir("./dist/" + old_name_folder + "/Base")
+print(os.getcwd())
+
+os.rename(old_name_plugin + ".esp", new_name_plugin + ".esp")
+#os.rename(old_name_plugin + ".esl", new_name_plugin + ".esl")
+#os.rename(old_name_plugin + ".esm", new_name_plugin + ".esm")
+
+os.chdir("../../..")
+print(os.getcwd())
+
+os.chdir("./dist/" + old_name_folder + "/Source/scripts")
+print(os.getcwd())
+
+os.rename(old_name_plugin_short + "_MCM.psc", old_name_plugin_short + "_MCM.psc")
+
+os.chdir("../../../..")
 print(os.getcwd())
 
 
