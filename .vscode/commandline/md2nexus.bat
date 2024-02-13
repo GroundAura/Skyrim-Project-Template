@@ -1,2 +1,2 @@
-"{Pathmd2nexus}\md2nexus" -i "docs/description-md" -o "docs/description-nexus"
+"{Pathmd2nexus}\md2nexus" -i "docs\description-md" -o "docs\description-nexus"
 robocopy "docs\description-md" "docs\description-nexus" *.txt /it

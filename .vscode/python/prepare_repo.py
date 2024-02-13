@@ -1,7 +1,7 @@
 import os
-#import shutil
+import shutil
 #from pathlib import Path
-# from pathlib2 import Path
+#from pathlib2 import Path
 #from fileinput import FileInput
 
 
@@ -71,13 +71,13 @@ new_title_short_xml = "______"
 #new_name_plugin = "AIT"
 #new_name_plugin_short = "AIT"
 #new_name_zip = "Auras Inventory Tweaks"
-#new_path_7Zip = "C:\Program Files\7-Zip"
-#new_path_md2nexus = "C:\Tools\md2nexus"
-#new_path_MO2Downloads = "D:\Games\Skyrim\MO2\downloads"
-#new_path_MO2Mods = "C:\Games\Skyrim\MO2\mods"
-#new_path_PapyrusCK = "C:\Games\Skyrim\MO2\mods\Creation Kit - Source\Scripts\Source"
-#new_path_PapyrusMCMHelper = "C:\Coding\GitHub\Skyrim\Exit-9B\MCM Helper SDK\Source\Scripts"
-#new_path_PapyrusSKSE = "C:\Games\Skyrim\MO2\mods\SKSE Scripts (AE 1.6.640)\Scripts\Source"
+#new_path_7Zip = "C:\\Program Files\\7-Zip"
+#new_path_md2nexus = "C:\\Tools\\md2nexus"
+#new_path_MO2Downloads = "D:\\Games\\Skyrim\\MO2\\downloads"
+#new_path_MO2Mods = "C:\\Games\\Skyrim\\MO2\\mods"
+#new_path_PapyrusCK = "C:\\Games\\Skyrim\\MO2\\mods\\Creation Kit - Source\\Scripts\\Source"
+#new_path_PapyrusMCMHelper = "C:\\Coding\\GitHub\\Skyrim\\Exit-9B\\MCM Helper SDK\\Source\\Scripts"
+#new_path_PapyrusSKSE = "C:\\Games\\Skyrim\\MO2\\mods\\SKSE Scripts (AE 1.6.640)\\Scripts\\Source"
 #new_title = "Aura's Inventory Tweaks"
 #new_title_xml = "Aura's Inventory Tweaks"
 #new_title_short = "AIT"
@@ -96,13 +96,13 @@ new_title_short_xml = "______"
 #new_name_plugin = "PENIS_IconsAddon"
 #new_name_plugin_short = "PENISIcons"
 #new_name_zip = "Phenomenally Enriched & Nuanced Ingredients for SkyUI"
-#new_path_7Zip = "C:\Program Files\7-Zip"
-#new_path_md2nexus = "C:\Tools\md2nexus"
-#new_path_MO2Downloads = "D:\Games\Skyrim\MO2\downloads"
-#new_path_MO2Mods = "C:\Games\Skyrim\MO2\mods"
-#new_path_PapyrusCK = "C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts"
-#new_path_PapyrusMCMHelper = "C:\Coding\GitHub\Skyrim\Exit-9B\MCM Helper SDK\Source\Scripts"
-#new_path_PapyrusSKSE = "C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts"
+#new_path_7Zip = "C:\\Program Files\\7-Zip"
+#new_path_md2nexus = "C:\\Tools\\md2nexus"
+#new_path_MO2Downloads = "D:\\Games\\Skyrim\\MO2\\downloads"
+#new_path_MO2Mods = "C:\\Games\\Skyrim\\MO2\\mods"
+#new_path_PapyrusCK = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\Source\\Scripts"
+#new_path_PapyrusMCMHelper = "C:\\Coding\\GitHub\\Skyrim\\Exit-9B\\MCM Helper SDK\\Source\\Scripts"
+#new_path_PapyrusSKSE = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\Source\\Scripts"
 #new_title = "Phenomenally Enriched & Nuanced Ingredients for SkyUI"
 #new_title_xml = "Phenomenally Enriched and Nuanced Ingredients for SkyUI"
 #new_title_short = "P.E.N.I.S. for B.O.O.B.I.E.S"
@@ -528,7 +528,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Source/scripts")
 print(os.getcwd())
 
-os.rename(old_name_plugin_short + "_MCM.psc", old_name_plugin_short + "_MCM.psc")
+os.rename(old_name_plugin_short + "_MCM.psc", new_name_plugin_short + "_MCM.psc")
 
 os.chdir("../../../..")
 print(os.getcwd())
@@ -543,7 +543,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
 print(os.getcwd())
 
-os.rename(old_name_plugin, new_name_plugin)
+shutil.move(old_name_plugin, new_name_plugin)
 
 os.chdir("../../../../..")
 print(os.getcwd())
@@ -552,7 +552,7 @@ print(os.getcwd())
 os.chdir("./dist")
 print(os.getcwd())
 
-os.rename(old_name_folder, new_name_folder)
+shutil.move(old_name_folder, new_name_folder)
 
 os.chdir("..")
 print(os.getcwd())
