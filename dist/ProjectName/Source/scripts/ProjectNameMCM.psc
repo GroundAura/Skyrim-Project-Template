@@ -1,1 +1,0 @@
-ScriptName ProjectNameMCM Extends MCM_ConfigBase

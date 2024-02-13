@@ -1,1 +1,1 @@
-ProjectName is a mod that does a thing.
+{TitleName} is a mod that does a thing.

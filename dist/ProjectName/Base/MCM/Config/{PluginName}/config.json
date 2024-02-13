@@ -1,17 +1,17 @@
 {
 "$schema": "https://raw.githubusercontent.com/Exit-9B/MCM-Helper/main/docs/config.schema.json",
-"modName": "ProjectName",
-"displayName": "$ProjectName_MCM",
+"modName": "{PluginName}",
+"displayName": "${PluginNameShort}_MCM",
 "minMcmVersion": 13,
-"pluginRequirements": [ "ProjectName.esp" ],
+"pluginRequirements": [ "{PluginName}.esp" ],
 "cursorFillMode": "topToBottom",
 "pages": [
 	{
-		"pageDisplayName": "$ProjectName_MCM_Page1",
+		"pageDisplayName": "${PluginNameShort}_MCM_Page1",
 		"cursorFillMode": "topToBottom",
 		"content": [
 			{
-				"text": "$ProjectName_MCM_Heading1",
+				"text": "${PluginNameShort}_MCM_Heading1",
 				"type": "header"
 			}
 		]

@@ -1,1 +1,1 @@
-# [ProjectName](https://github.com/GroundAura/{RepositoryName}/wiki)
+# [{TitleName}](https://github.com/{GitHubAccount}/{RepositoryName}/wiki)

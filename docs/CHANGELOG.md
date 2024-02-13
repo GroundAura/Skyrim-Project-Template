@@ -1,4 +1,4 @@
-# ProjectName - Changelog
+# {TitleName} - Changelog
 
 ## Version 1.0.0
 

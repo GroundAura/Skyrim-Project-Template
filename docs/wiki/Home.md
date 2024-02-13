@@ -1,7 +1,7 @@
-# ProjectName
+# {TitleName}
 
 ---
 
-Welcome to the ProjectName wiki!
+Welcome to the {TitleName} wiki!
 
-ProjectName is a mod for Skyrim Special Edition.
+{TitleName} is a mod for Skyrim Special Edition.
