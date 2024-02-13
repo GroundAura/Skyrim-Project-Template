@@ -109,6 +109,13 @@
             "dependsOn": [
                 "md2nexus.bat"
             ]
+        },
+        {
+            "label": "Prepare Repository",
+            "type": "shell",
+            "command": "${command:python.interpreterPath}",
+            "args": [".vscode\\python\\prepare_repo.py"],
+            "group": "build"
         }
     ]
 }
