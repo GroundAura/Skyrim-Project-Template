@@ -21,6 +21,7 @@ build/(old)/
 build/old/
 build/papyrus/
 build/release/
+#dist/**/scripts/*.pex
 
 # Custom #
 
