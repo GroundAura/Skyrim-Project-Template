@@ -1,1 +1,1 @@
-robocopy "dist\ProjectName\Base" "C:\Games\Elder Scrolls\V - Skyrim\SMEFT\mods\ProjectName (pre-release) []" /e
+robocopy "dist\(FolderName)\Base" "(PathMO2Mods)\(MO2ModNamePR)" /e
