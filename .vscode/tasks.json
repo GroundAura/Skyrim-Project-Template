@@ -22,37 +22,37 @@
         {
             "label": "copy-img.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\copy-img.bat",
+            "command": ".vscode\\scripts\\copy-img.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "copy-pex.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\copy-pex.bat",
+            "command": ".vscode\\scripts\\copy-pex.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "md2nexus.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\md2nexus.bat",
+            "command": ".vscode\\scripts\\md2nexus.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "mo2-downloads.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\mo2-downloads.bat",
+            "command": ".vscode\\scripts\\mo2-downloads.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "mo2-mod.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\mo2-mod.bat",
+            "command": ".vscode\\scripts\\mo2-mod.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "zip.bat",
             "type": "shell",
-            "command": ".vscode\\commandline\\zip.bat",
+            "command": ".vscode\\scripts\\zip.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
@@ -114,7 +114,7 @@
             "label": "Prepare Repository",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
-            "args": [".vscode\\python\\prepare_repo.py"],
+            "args": [".vscode\\scripts\\prepare_repo.py"],
             "group": "build"
         }
     ]
