@@ -540,21 +540,21 @@ print(os.getcwd())
 # print(os.getcwd())
 
 
-#os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
-#
-# (rename folder)
-# old_name_plugin = new_name_plugin
-#
-#os.chdir("../../../../..")
-#print(os.getcwd())
+os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
+print(os.getcwd())
+
+os.rename(old_name_plugin, new_name_plugin)
+
+os.chdir("../../../../..")
+print(os.getcwd())
 
 
-#os.chdir("./dist")
-#
-# (rename folder)
-# old_name_folder = new_name_folder
-#
-#os.chdir("..")
-#print(os.getcwd())
+os.chdir("./dist")
+print(os.getcwd())
+
+os.rename(old_name_folder, new_name_folder)
+
+os.chdir("..")
+print(os.getcwd())
 
 
