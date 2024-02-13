@@ -1,5 +1,5 @@
 [General]
-name=ProjectName (pre-release) []
-modName=ProjectName
+name={MO2ModNameTest}
+modName={TitleName}
 installed=false
 uninstalled=false
