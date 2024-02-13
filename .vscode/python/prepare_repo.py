@@ -470,20 +470,6 @@ print(os.getcwd())
 
 
 
-# RENAME FOLDERS
-
-# print(os.getcwd())
-
-# os.chdir("./dist")
-# (rename folder)
-# old_name_folder = new_name_folder
-
-# os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
-# (rename folder)
-# old_name_plugin = new_name_plugin
-
-
-
 # RENAME FILES
 
 # print(os.getcwd())
@@ -498,6 +484,17 @@ os.chdir("../..")
 print(os.getcwd())
 
 
+os.chdir("./dist/" + old_name_folder + "/Base")
+print(os.getcwd())
+
+#os.rename(old_name_plugin + ".esl", new_name_plugin + ".esl")
+#os.rename(old_name_plugin + ".esm", new_name_plugin + ".esm")
+os.rename(old_name_plugin + ".esp", new_name_plugin + ".esp")
+
+os.chdir("../../..")
+print(os.getcwd())
+
+
 os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
 print(os.getcwd())
 
@@ -507,15 +504,14 @@ os.chdir("../../../../..")
 print(os.getcwd())
 
 
-os.chdir("./dist/" + old_name_folder + "/Base")
-print(os.getcwd())
+#os.chdir("./dist/" + old_name_folder + "/Base/scripts")
+#print(os.getcwd())
+#
+#os.rename(old_name_plugin_short + "_MCM.pex", new_name_plugin_short + "_MCM.pex")
+#
+#os.chdir("../../..")
+#print(os.getcwd())
 
-os.rename(old_name_plugin + ".esp", new_name_plugin + ".esp")
-#os.rename(old_name_plugin + ".esl", new_name_plugin + ".esl")
-#os.rename(old_name_plugin + ".esm", new_name_plugin + ".esm")
-
-os.chdir("../../..")
-print(os.getcwd())
 
 os.chdir("./dist/" + old_name_folder + "/Source/scripts")
 print(os.getcwd())
@@ -524,5 +520,29 @@ os.rename(old_name_plugin_short + "_MCM.psc", old_name_plugin_short + "_MCM.psc"
 
 os.chdir("../../../..")
 print(os.getcwd())
+
+
+
+# RENAME FOLDERS
+
+# print(os.getcwd())
+
+
+#os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
+#
+# (rename folder)
+# old_name_plugin = new_name_plugin
+#
+#os.chdir("../../../../..")
+#print(os.getcwd())
+
+
+#os.chdir("./dist")
+#
+# (rename folder)
+# old_name_folder = new_name_folder
+#
+#os.chdir("..")
+#print(os.getcwd())
 
 
