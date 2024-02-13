@@ -1,1 +1,1 @@
-robocopy "build\papyrus\release" "dist\(FolderName)\Base\scripts" *.pex /it
+robocopy "build\papyrus\release" "dist\{FolderName}\Base\scripts" *.pex /it
