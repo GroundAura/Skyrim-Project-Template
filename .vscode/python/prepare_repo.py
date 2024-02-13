@@ -413,18 +413,30 @@ os.chdir("..")
 print(os.getcwd())
 
 
-#os.chdir("./docs/description-md")
-#print(os.getcwd())
-#
-#os.chdir("../..")
-#print(os.getcwd())
+os.chdir("./docs/description-md")
+print(os.getcwd())
+
+with open(r'description_brief.txt', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+with open(r'description_brief.txt', 'w') as file:
+	file.write(data)
+
+os.chdir("../..")
+print(os.getcwd())
 
 
-#os.chdir("./docs/description-nexus")
-#print(os.getcwd())
-#
-#os.chdir("../..")
-#print(os.getcwd())
+os.chdir("./docs/description-nexus")
+print(os.getcwd())
+
+with open(r'description_brief.txt', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+with open(r'description_brief.txt', 'w') as file:
+	file.write(data)
+
+os.chdir("../..")
+print(os.getcwd())
 
 
 #os.chdir("./docs/images")
