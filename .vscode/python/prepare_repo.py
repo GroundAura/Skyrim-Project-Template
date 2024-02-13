@@ -493,7 +493,7 @@ print("Replacing Text: Complete!")
 # RENAME FILES
 
 print("Renaming Files: Starting...")
-# print(os.getcwd())
+print(os.getcwd())
 
 
 os.chdir("./build/MO2")
@@ -550,7 +550,7 @@ print("Renaming Files: Complete!")
 # RENAME FOLDERS
 
 print("Renaming Directories: Starting...")
-# print(os.getcwd())
+print(os.getcwd())
 
 
 os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
@@ -572,6 +572,27 @@ print(os.getcwd())
 
 
 print("Renaming Directories: Complete!")
+
+
+
+# MOVE FILES
+
+print("Moving Files: Starting...")
+print(os.getcwd())
+
+os.remove("LICENSE.txt")
+shutil.move("./_root/LICENSE.txt", "./LICENSE.txt")
+print("moved LICENSE.txt")
+
+os.remove("README.md")
+shutil.move("./_root/README.md", "./README.md")
+print("moved README.md")
+
+os.rmdir("_root")
+print("removed _root/")
+
+
+print("Moving Files: Complete!")
 
 
 
