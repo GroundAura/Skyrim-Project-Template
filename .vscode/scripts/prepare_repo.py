@@ -11,13 +11,16 @@ print("Beginning preparing repository.")
 
 print("Setting Variables: Starting...")
 
-def read_config(file_path):
-    config = configparser.ConfigParser()
+def read_config(file_path, section_header):
+    config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
     config.read(file_path)
-    return config['Variables']
+    return config[section_header]
 
 config_path = './.vscode/scripts/variables.ini'
-config_values = read_config(config_path)
+config_values = read_config(config_path, 'IDs')
+config_values = read_config(config_path, 'License')
+config_values = read_config(config_path, 'Name')
+config_values = read_config(config_path, 'Paths')
 
 # Old Text:
 old_author_display = "{AuthorName}"
