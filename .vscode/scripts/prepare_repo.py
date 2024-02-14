@@ -523,14 +523,15 @@ os.chdir("../../../../..")
 print(os.getcwd())
 
 
-os.chdir("./dist/" + old_name_folder + "/Base/scripts")
-print(os.getcwd())
-
-if (os.path.isfile(old_name_plugin_short + "_MCM.pex")):
-	os.rename(old_name_plugin_short + "_MCM.pex", new_name_plugin_short + "_MCM.pex")
-
-os.chdir("../../..")
-print(os.getcwd())
+## if (os.path.exists("./dist/" + old_name_folder + "/Base/scripts")):
+#os.chdir("dist/" + old_name_folder + "/Base/scripts")
+#print(os.getcwd())
+#
+#if (os.path.isfile(old_name_plugin_short + "_MCM.pex")):
+#	os.rename(old_name_plugin_short + "_MCM.pex", new_name_plugin_short + "_MCM.pex")
+#
+#os.chdir("../../..")
+#print(os.getcwd())
 
 
 os.chdir("./dist/" + old_name_folder + "/Source/scripts")
