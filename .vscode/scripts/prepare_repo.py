@@ -1,12 +1,23 @@
+import configparser
 import os
 import shutil
+#from fileinput import FileInput
 #from pathlib import Path
 #from pathlib2 import Path
-#from fileinput import FileInput
 
-
+print("Beginning preparing repository.")
 
 # VARIABLES
+
+print("Setting Variables: Starting...")
+
+def read_config(file_path):
+    config = configparser.ConfigParser()
+    config.read(file_path)
+    return config['Variables']
+
+config_path = './.vscode/scripts/variables.ini'
+config_values = read_config(config_path)
 
 # Old Text:
 old_author_display = "{AuthorName}"
@@ -34,83 +45,31 @@ old_title_xml = "{TitleNameXML}"
 old_title_xml_short = "{TitleNameXMLShort}"
 
 # New Text:
-new_author_display = "______"
-new_author_github = "______"
-new_id_github = "______"
-new_id_nexus = "______"
-new_license_holder = "______"
-new_license_year = "______"
-new_name_folder = "______"
-new_name_mo2_release = "______"
-new_name_mo2_test = "______"
-new_name_plugin = "______"
-new_name_plugin_short = "______"
-new_name_zip = "______"
-new_path_7Zip = "______"
-new_path_md2nexus = "______"
-new_path_MO2Downloads = "______"
-new_path_MO2Mods = "______"
-new_path_PapyrusCK = "______"
-new_path_PapyrusMCMHelper = "______"
-new_path_PapyrusSKSE = "______"
-new_title = "______"
-new_title_xml = "______"
-new_title_short = "______"
-new_title_short_xml = "______"
+new_author_display = config_values["AuthorName"]
+new_author_github = config_values["GitHubAccount"]
+new_id_github = config_values["RepositoryName"]
+new_id_nexus = config_values["NexusID"]
+new_license_holder = config_values["LicensorName"]
+new_license_year = config_values["LicenseYear"]
+new_name_folder = config_values["FolderName"]
+new_name_mo2_release = config_values["MO2ModName"]
+new_name_mo2_test = config_values["MO2ModNameTest"]
+new_name_plugin = config_values["PluginName"]
+new_name_plugin_short = config_values["PluginNameShort"]
+new_name_zip = config_values["ZipName"]
+new_path_7Zip = config_values["Path7Zip"]
+new_path_md2nexus = config_values["Pathmd2nexus"]
+new_path_MO2Downloads = config_values["PathMO2Downloads"]
+new_path_MO2Mods = config_values["PathMO2Mods"]
+new_path_PapyrusCK = config_values["PathCKSource"]
+new_path_PapyrusMCMHelper = config_values["PathMCMHelperSource"]
+new_path_PapyrusSKSE = config_values["PathSKSESource"]
+new_title = config_values["TitleName"]
+new_title_xml = config_values["TitleNameXML"]
+new_title_short = config_values["TitleNameShort"]
+new_title_short_xml = config_values["TitleNameXMLShort"]
 
-# Example 1:
-#new_author_display = "GroundAura"
-#new_author_github = "GroundAura"
-#new_id_github = "Auras-Inventory-Tweaks"
-#new_id_nexus = "68557"
-#new_license_holder = "GroundAura"
-#new_license_year = "2023"
-#new_name_folder = "Aura's Inventory Tweaks"
-#new_name_mo2_release = "Aura's Inventory Tweaks []"
-#new_name_mo2_test = "Aura's Inventory Tweaks (pre-release) []"
-#new_name_plugin = "AIT"
-#new_name_plugin_short = "AIT"
-#new_name_zip = "Auras Inventory Tweaks"
-#new_path_7Zip = "C:\\Program Files\\7-Zip"
-#new_path_md2nexus = "C:\\Tools\\md2nexus"
-#new_path_MO2Downloads = "D:\\Games\\Skyrim\\MO2\\downloads"
-#new_path_MO2Mods = "C:\\Games\\Skyrim\\MO2\\mods"
-#new_path_PapyrusCK = "C:\\Games\\Skyrim\\MO2\\mods\\Creation Kit - Source\\Scripts\\Source"
-#new_path_PapyrusMCMHelper = "C:\\Coding\\GitHub\\Skyrim\\Exit-9B\\MCM Helper SDK\\Source\\Scripts"
-#new_path_PapyrusSKSE = "C:\\Games\\Skyrim\\MO2\\mods\\SKSE Scripts (AE 1.6.640)\\Scripts\\Source"
-#new_title = "Aura's Inventory Tweaks"
-#new_title_xml = "Aura's Inventory Tweaks"
-#new_title_short = "AIT"
-#new_title_short_xml = "AIT"
-
-# Example 2:
-#new_author_display = "GroundAura"
-#new_author_github = "GroundAura"
-#new_id_github = "Phenomenally-Enriched-Ingredients"
-#new_id_nexus = "90526"
-#new_license_holder = "GroundAura"
-#new_license_year = "2023"
-#new_name_folder = "Phenomenally Enriched & Nuanced Ingredients for SkyUI"
-#new_name_mo2_release = "BOOBIES - PENIS (pre-release) []"
-#new_name_mo2_test = "BOOBIES - PENIS (pre-release) []"
-#new_name_plugin = "PENIS_IconsAddon"
-#new_name_plugin_short = "PENISIcons"
-#new_name_zip = "Phenomenally Enriched & Nuanced Ingredients for SkyUI"
-#new_path_7Zip = "C:\\Program Files\\7-Zip"
-#new_path_md2nexus = "C:\\Tools\\md2nexus"
-#new_path_MO2Downloads = "D:\\Games\\Skyrim\\MO2\\downloads"
-#new_path_MO2Mods = "C:\\Games\\Skyrim\\MO2\\mods"
-#new_path_PapyrusCK = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\Source\\Scripts"
-#new_path_PapyrusMCMHelper = "C:\\Coding\\GitHub\\Skyrim\\Exit-9B\\MCM Helper SDK\\Source\\Scripts"
-#new_path_PapyrusSKSE = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\Source\\Scripts"
-#new_title = "Phenomenally Enriched & Nuanced Ingredients for SkyUI"
-#new_title_xml = "Phenomenally Enriched and Nuanced Ingredients for SkyUI"
-#new_title_short = "P.E.N.I.S. for B.O.O.B.I.E.S"
-#new_title_short_xml = "P.E.N.I.S. for B.O.O.B.I.E.S"
-
-
-
-print("Beginning preparing repository.")
+print("Setting Variables: Complete!")
 
 
 
