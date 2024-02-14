@@ -492,7 +492,7 @@ print(os.getcwd())
 os.chdir("./build/MO2")
 print(os.getcwd())
 
-if (os.path.isfile(old_name_zip + ".zip.meta") == True):
+if (os.path.isfile(old_name_zip + ".zip.meta")):
 	os.rename(old_name_zip + ".zip.meta", new_name_zip + ".zip.meta")
 
 os.chdir("../..")
@@ -502,11 +502,11 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base")
 print(os.getcwd())
 
-if (os.path.isfile(old_name_plugin + ".esl") == True):
+if (os.path.isfile(old_name_plugin + ".esl")):
 	os.rename(old_name_plugin + ".esl", new_name_plugin + ".esl")
-if (os.path.isfile(old_name_plugin + ".esm") == True):
+if (os.path.isfile(old_name_plugin + ".esm")):
 	os.rename(old_name_plugin + ".esm", new_name_plugin + ".esm")
-if (os.path.isfile(old_name_plugin + ".esp") == True):
+if (os.path.isfile(old_name_plugin + ".esp")):
 	os.rename(old_name_plugin + ".esp", new_name_plugin + ".esp")
 
 os.chdir("../../..")
@@ -516,7 +516,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/interface/translations")
 print(os.getcwd())
 
-if (os.path.isfile(old_name_plugin + "_ENGLISH.txt") == True):
+if (os.path.isfile(old_name_plugin + "_ENGLISH.txt")):
 	os.rename(old_name_plugin + "_ENGLISH.txt", new_name_plugin + "_ENGLISH.txt")
 
 os.chdir("../../../../..")
@@ -526,7 +526,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/scripts")
 print(os.getcwd())
 
-if (os.path.isfile(old_name_plugin_short + "_MCM.pex") == True):
+if (os.path.isfile(old_name_plugin_short + "_MCM.pex")):
 	os.rename(old_name_plugin_short + "_MCM.pex", new_name_plugin_short + "_MCM.pex")
 
 os.chdir("../../..")
@@ -536,7 +536,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Source/scripts")
 print(os.getcwd())
 
-if (os.path.isfile(old_name_plugin_short + "_MCM.psc") == True):
+if (os.path.isfile(old_name_plugin_short + "_MCM.psc")):
 	os.rename(old_name_plugin_short + "_MCM.psc", new_name_plugin_short + "_MCM.psc")
 
 os.chdir("../../../..")
@@ -556,7 +556,7 @@ print(os.getcwd())
 os.chdir("./dist/" + old_name_folder + "/Base/MCM/Config")
 print(os.getcwd())
 
-if (os.path.exists(old_name_plugin) == True):
+if (os.path.exists(old_name_plugin)):
 	shutil.move(old_name_plugin, new_name_plugin)
 
 os.chdir("../../../../..")
@@ -566,7 +566,7 @@ print(os.getcwd())
 os.chdir("./dist")
 print(os.getcwd())
 
-if (os.path.exists(old_name_folder) == True):
+if (os.path.exists(old_name_folder)):
 	shutil.move(old_name_folder, new_name_folder)
 
 os.chdir("..")
@@ -582,17 +582,17 @@ print("Renaming Directories: Complete!")
 print("Moving Files: Starting...")
 print(os.getcwd())
 
-if (os.path.isfile("LICENSE.txt") == True):
+if (os.path.isfile("LICENSE.txt")):
 	os.remove("LICENSE.txt")
 	shutil.move("./_root/LICENSE.txt", "./LICENSE.txt")
 	print("moved LICENSE.txt")
 
-if (os.path.isfile("README.md") == True):
+if (os.path.isfile("README.md")):
 	os.remove("README.md")
 	shutil.move("./_root/README.md", "./README.md")
 	print("moved README.md")
 
-if (os.path.exists("_root") == True):
+if (os.path.exists("_root")):
 	os.rmdir("_root")
 	print("removed _root/")
 
