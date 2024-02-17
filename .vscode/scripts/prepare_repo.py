@@ -16,11 +16,11 @@ def read_config(file_path, section_header):
     config.read(file_path)
     return config[section_header]
 
-config_path = './.vscode/scripts/variables.ini'
-config_values = read_config(config_path, 'IDs')
-config_values = read_config(config_path, 'License')
-config_values = read_config(config_path, 'Name')
-config_values = read_config(config_path, 'Paths')
+config_path = './.vscode/variables.ini'
+config_values_ids = read_config(config_path, 'IDs')
+config_values_license = read_config(config_path, 'License')
+config_values_name = read_config(config_path, 'Name')
+config_values_paths = read_config(config_path, 'Paths')
 
 # Old Text:
 old_author_display = "{AuthorName}"
@@ -48,29 +48,29 @@ old_title_xml = "{TitleNameXML}"
 old_title_xml_short = "{TitleNameXMLShort}"
 
 # New Text:
-new_author_display = config_values["AuthorName"]
-new_author_github = config_values["GitHubAccount"]
-new_id_github = config_values["RepositoryName"]
-new_id_nexus = config_values["NexusID"]
-new_license_holder = config_values["LicensorName"]
-new_license_year = config_values["LicenseYear"]
-new_name_folder = config_values["FolderName"]
-new_name_mo2_release = config_values["MO2ModName"]
-new_name_mo2_test = config_values["MO2ModNameTest"]
-new_name_plugin = config_values["PluginName"]
-new_name_plugin_short = config_values["PluginNameShort"]
-new_name_zip = config_values["ZipName"]
-new_path_7Zip = config_values["Path7Zip"]
-new_path_md2nexus = config_values["Pathmd2nexus"]
-new_path_MO2Downloads = config_values["PathMO2Downloads"]
-new_path_MO2Mods = config_values["PathMO2Mods"]
-new_path_PapyrusCK = config_values["PathCKSource"]
-new_path_PapyrusMCMHelper = config_values["PathMCMHelperSource"]
-new_path_PapyrusSKSE = config_values["PathSKSESource"]
-new_title = config_values["TitleName"]
-new_title_xml = config_values["TitleNameXML"]
-new_title_short = config_values["TitleNameShort"]
-new_title_short_xml = config_values["TitleNameXMLShort"]
+new_author_display = config_values_name["AuthorName"]
+new_author_github = config_values_ids["GitHubAccount"]
+new_id_github = config_values_ids["RepositoryName"]
+new_id_nexus = config_values_ids["NexusID"]
+new_license_holder = config_values_license["LicensorName"]
+new_license_year = config_values_license["LicenseYear"]
+new_name_folder = config_values_name["FolderName"]
+new_name_mo2_release = config_values_name["MO2ModName"]
+new_name_mo2_test = config_values_name["MO2ModNameTest"]
+new_name_plugin = config_values_name["PluginName"]
+new_name_plugin_short = config_values_name["PluginNameShort"]
+new_name_zip = config_values_name["ZipName"]
+new_path_7Zip = config_values_paths["Path7Zip"]
+new_path_md2nexus = config_values_paths["Pathmd2nexus"]
+new_path_MO2Downloads = config_values_paths["PathMO2Downloads"]
+new_path_MO2Mods = config_values_paths["PathMO2Mods"]
+new_path_PapyrusCK = config_values_paths["PathCKSource"]
+new_path_PapyrusMCMHelper = config_values_paths["PathMCMHelperSource"]
+new_path_PapyrusSKSE = config_values_paths["PathSKSESource"]
+new_title = config_values_name["TitleName"]
+new_title_xml = config_values_name["TitleNameXML"]
+new_title_short = config_values_name["TitleNameShort"]
+new_title_short_xml = config_values_name["TitleNameXMLShort"]
 
 print("Setting Variables: Complete!")
 

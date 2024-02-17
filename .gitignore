@@ -24,8 +24,11 @@ build/release/
 #dist/**/scripts/*.pex
 
 # Custom #
-{PluginNameShort}_MCM.pex
+*PluginName*MCM.pex
+*snippets.*
+*temp.*
 ExampleScript.pex
+test.py
 
 # Dependencies #
 
