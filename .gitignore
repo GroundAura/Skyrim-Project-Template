@@ -52,6 +52,8 @@ idea/old/
 idea/private
 idea/secret/
 
+# Licensed #
+
 # OS Files #
 **/._.DS_Store
 **/._.DS_Store*
