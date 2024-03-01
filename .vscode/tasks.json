@@ -95,7 +95,7 @@
             ]
         },
         {
-            "label": "Compile Papyrus Scripts",
+            "label": "Compile Papyrus scripts",
             "group": "build",
             "dependsOn": [
                 "Compile Papyrus Scripts (Debug)",

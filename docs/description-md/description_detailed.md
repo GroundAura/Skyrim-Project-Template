@@ -1,165 +1,92 @@
-# \[center\]**\[color=#ffd966\]ProjectName\[/color\]**\[/center\]
+# \[center\]![{TitleName}](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/brand/Title.png)\[/center\]
 
-## \[center\]**\[color=#93c47d\]Subtitle\[/color\]**\[/center\]
+## \[center\]![Overview](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Overview.png)\[/center\]
 
-\[center\][![kofi](https://github.com/doodlum/nexusmods-widgets/blob/main/Ko-fi_40px_60fps.png?raw=true)](https://ko-fi.com/groundaura)          [![linktree](https://i.imgur.com/jOQE4n8.png)](https://linktr.ee/groundaura)          [![discord](https://github.com/doodlum/nexusmods-widgets/blob/main/Discord_40px.png?raw=true)](https://discord.gg/zft8DmbfKv)\[/center\]
+\[font=Verdana\]**{TitleName}**\[/font\] (or \[font=Verdana\]**{TitleNameShort}**\[/font\]) is a mod that does a thing.
 
----
+## \[center\]![Details](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Details.png)\[/center\]
 
-## \[center\]**\[color=#ffd966\]Overview\[/color\]**\[/center\]
+## \[center\]![Features](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Features.png)\[/center\]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## \[center\]![Info](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Info.png)\[/center\]
 
----
+## \[center\]![Preview](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Preview.png)\[/center\]
 
-## \[center\]**\[color=#ffd966\]Features\[/color\]**\[/center\]
+## \[center\]![Installation](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Installation.png)\[/center\]
 
-### **\[color=#93c47d\]Feature 1\[/color\]**
+Install {TitleNameShort} like any other mod, with MO2 or another mod manager.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## \[font=Verdana\]**Requirements**\[/font\]
 
-### **\[color=#93c47d\]Feature 2\[/color\]**
+None.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- [ModName]()
 
-### **\[color=#93c47d\]Feature 3\[/color\]**
+## \[font=Verdana\]**Optional Requirements**\[/font\]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+None.
 
----
+- [ModName]() - Conditions.
 
-## \[center\]**\[color=#ffd966\]Installation\[/color\]**\[/center\]
+## \[font=Verdana\]**Mod Order (Mods View)**\[/font\]
 
-Install ProjectName and its requirements with your choice of mod manager. Overwrite any other files if asked. Let me know if you have any problems.
+Order doesn't matter.
 
-### **\[color=#93c47d\]Hard Requirements:\[/color\]**
+## \[font=Verdana\]**Plugin Order (Plugins View)**\[/font\]
 
-- [ModName](https://www.nexusmods.com/skyrimspecialedition/mods/) v1.0.0+.
+No plugins.
 
-### **\[color=#93c47d\]Soft Requirements:\[/color\]**
+Order doesn't matter.
 
-- [ModName](https://www.nexusmods.com/skyrimspecialedition/mods/) v1.0.0+ – Conditions.
+## \[center\]![Compatibility](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Compatibility.png)\[/center\]
 
-### **\[color=#93c47d\]Asset Load Order\[/color\]**
+## \[font=Verdana\]\[color=#00ac46\]**Compatible:**\[/color\]\[/font\]
 
-**(MO2 Left Pane or Vortex Mods Page)**
+- [ModName]()
 
-Make sure that ProjectName takes priority over any other mod that includes the same files.
+## \[font=Verdana\]\[color=#fdc500\]**Partially Compatible:**\[/color\]\[/font\]
 
-OR
+\[font=Verdana\]\[color=#00ac46\]No known incompatibilities.\[/color\]\[/font\]
 
-Order shouldn't matter because all this mods' file are unique.
+## \[font=Verdana\]\[color=#dc0000\]**Incompatible:**\[/color\]\[/font\]
 
-OR
+\[font=Verdana\]\[color=#00ac46\]No known incompatibilities.\[/color\]\[/font\]
 
-Order shouldn't matter because any other mods that include the same files should be identical.
+## \[center\]![Recommendations](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Recommendations.png)\[/center\]
 
-### **\[color=#93c47d\]Plugin Load Order\[/color\]**
+- [ModName]()
 
-**(MO2 Right Pane or Vortex Plugins Page)**
+## \[center\]![FAQ](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/FAQ.png)\[/center\]
 
-Make sure that `ProjectName.esp` loads after `Example.esp`.
+### **\[font=Verdana\]Q1: What Skyrim versions are supported?\[/font\]**
 
-OR
+- This mod is not directly dependent on any specific Skyrim version.
+- It does not require any mods that are version dependent.
+- It does require mods that are version dependent, so you'll have to install the correct versions of those mods for your Skyrim version.
+- When everything is installed properly, it should work on any modern version of Skyrim (SE/AE/1.5.x/1.6.x/Steam/GOG/VR), although it hasn't been tested on every version.
+- I do not directly support Oldrim/LE or console, but you're welcome to try to port it yourself (see permissions).
 
-Load order doesn't matter.
+### **\[font=Verdana\]Q2: What types of plugins are used?\[/font\]**
 
----
+- No plugins are included.
+- All plugins included are .esp/.esl/.esm with the ESL flag. This means the plugins count towards the ~4096 ESL limit, not the ~255 ESP limit.
+- Plugin header version is 1.70. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are not required.
+- Plugin header version is 1.71. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are required.
 
-## \[center\]**\[color=#ffd966\]Compatibility\[/color\]**\[/center\]
+### **\[font=Verdana\]Q3: Does installing/updating/uninstalling on an existing save work?\[/font\]**
 
----
+- As far as I know it should be fine. However, when changing any mods at all mid-playthrough, consider following good modding practices such as making backups, using tools like [ReSaver](https://www.nexusmods.com/skyrimspecialedition/mods/5031), and using bugfix/stability mods like [Save Unbaker](https://www.nexusmods.com/skyrimspecialedition/mods/85565) ([VR](https://www.nexusmods.com/skyrimspecialedition/mods/86265)).
 
-## \[center\]**\[color=#ffd966\]Recommendations\[/color\]**\[/center\]
+## \[center\]![Contributing](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Contributing.png)\[/center\]
 
-- [ModName](https://www.nexusmods.com/skyrimspecialedition/mods/) by [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/97658973).
+## \[center\]![Source](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Source.png)\[/center\]
 
----
+## \[center\]![Thanks](https://raw.githubusercontent.com/{GitHubAccount}/{RepositoryName}/main/docs/images/banners/Thanks.png)\[/center\]
 
-## \[center\]**\[color=#ffd966\]FAQ\[/color\]**\[/center\]
+- [AuthorName](https://www.nexusmods.com/users/) for stuff.
 
-### **\[color=#93c47d\]Q1: What versions are supported?\[/color\]**
+\[center\][![linktree](https://i.imgur.com/jOQE4n8.png)](https://linktr.ee/groundaura)[\[font=Verdana\]\[color=#ffffff\]**Find me on Linktree**\[/font\]\[/color\]](https://linktr.ee/{LinktreeAccount})\[/center\]
+\[center\][![discord](https://github.com/doodlum/nexusmods-widgets/blob/main/Discord_40px.png?raw=true)](https://discord.gg/{DiscordServer})\[/center\]
+\[center\][![kofi](https://github.com/doodlum/nexusmods-widgets/blob/main/Ko-fi_40px_60fps.png?raw=true)](https://ko-fi.com/{KofiAccount})\[/center\]
 
-This mod is not version dependant as it doesn't have any SKSE plugins. Some required mods may be version dependant, so you'll have to install the correct versions and those mods may need to be updated if Skyrim gets any breaking updates in the future. It should work on any version of Skyrim including SE/AE/GOG/v1.5.x/v1.6.x/VR, but it hasn't been tested on every version. Oldrim and console are not supported, but you're welcome to try to port it yourself (see permissions).
-
-### **\[color=#93c47d\]Q2: Does this take plugin slots?\[/color\]**
-
-No .esp/.esm/.esl plugins are included.
-
-OR
-
-All plugins included are .esl or .esp/.esm with the ESL flag.
-
-### **\[color=#93c47d\]Q3: Does installing/updating/uninstalling on an existing save work?\[/color\]**
-
-As far as I know it should be fine. However, when changing any mods at all midplaythrough, consider following good modding practices such as making backups, using tools like [ReSaver](https://www.nexusmods.com/skyrimspecialedition/mods/5031), and using bugfix/stability mods like [Save Unbaker](https://www.nexusmods.com/skyrimspecialedition/mods/85565) ([VR](https://www.nexusmods.com/skyrimspecialedition/mods/86265)).
-
----
-
-## **\[color=#ffd966\]Credits\[/color\]**
-
-[spoiler]
-
-### **\[color=#93c47d\]Assets:\[/color\]**
-
-- Asset
-
-  - Author: [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/)
-
-  - License: [LicenseName](https://creativecommons.org/publicdomain/zero/1.0)
-
-### **\[color=#93c47d\]Mods Referenced:\[/color\]**
-
-- [ModName](https://www.nexusmods.com/skyrimspecialedition/mods/) by [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/97658973).
-
-### **\[color=#93c47d\]Modpage Resources:\[/color\]**
-
-- Font from [Sovngarde - A Nordic Font](https://www.nexusmods.com/skyrimspecialedition/mods/386) by [Koveich](https://www.nexusmods.com/skyrimspecialedition/users/34763925).
-
-- Icon from [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604) by [psychosteve](https://www.nexusmods.com/skyrim/users/37741).
-
-- Widgets from [nexusmods-widgets](https://github.com/doodlum/nexusmods-widgets) by [doodlum](https://www.nexusmods.com/skyrimspecialedition/users/28038035).
-
-### **\[color=#93c47d\]Tools Used:\[/color\]**
-
-- [Alphabetize Tool](https://wordcounter.net/alphabetize)
-
-- [Champollion](https://github.com/Orvid/Champollion/releases)
-
-- [Converting Colors](https://convertingcolors.com)
-
-- [Creation Kit](https://store.steampowered.com/app/1946180/Skyrim_Special_Edition_Creation_Kit)
-
-- [Everything](https://www.voidtools.com)
-
-- [FOMOD Creation Tool](https://www.nexusmods.com/fallout4/mods/6821)
-
-- [GIMP](https://www.gimp.org)
-
-- [GitHub Desktop](https://desktop.github.com)
-
-- [Inkscape](https://inkscape.org)
-
-- [JPEXS Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler/releases)
-
-- [md2nexus](https://www.nexusmods.com/skyrimspecialedition/mods/100441)
-
-- [mdigi tools color](https://mdigi.tools/color)
-
-- [Notepad++](https://notepad-plus-plus.org/downloads)
-
-- [Papyrus Compiler App](https://www.nexusmods.com/skyrimspecialedition/mods/23852)
-
-- [SSEEdit](https://www.nexusmods.com/skyrimspecialedition/mods/164)
-
-- [Visual Studio Code](https://code.visualstudio.com)
-
-- [WinMerge](https://winmerge.org)
-
-### **\[color=#93c47d\]Special Thanks To:\[/color\]**
-
-- [AuthorName](https://www.nexusmods.com/skyrimspecialedition/users/97658973) for stuff.
-
-[/spoiler]
-
-## \[center\][\[color=#c27ba0\]**> > > Check Out My Other Mods! < < <**\[/color\]](https://www.nexusmods.com/users/97658973)\[/center\]
+## \[center\][\[font=Verdana\]\[color=#ffffff\]\[u\]**> > > Check Out My Other Mods! < < <**\[/u\]\[/font\]\[/color\]](https://www.nexusmods.com/users/{NexusAccountID}?tab=user+files)\[/center\]

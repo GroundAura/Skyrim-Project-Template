@@ -21,20 +21,26 @@ config_values_ids = read_config(config_path, 'IDs')
 config_values_license = read_config(config_path, 'License')
 config_values_name = read_config(config_path, 'Name')
 config_values_paths = read_config(config_path, 'Paths')
+config_values_socials = read_config(config_path, 'Socials')
 
 # Old Text:
 old_author_display = "{AuthorName}"
 old_author_github = "{GitHubAccount}"
+old_contact_info = "{ContactInfo}"
+old_discord_server = "{DiscordServer}"
 old_id_github = "{RepositoryName}"
 old_id_nexus = "{NexusID}"
+old_kofi_account = "{KofiAccount}"
 old_license_holder = "{LicensorName}"
 old_license_year = "{LicenseYear}"
+old_linktree_account = "{LinktreeAccount}"
 old_name_folder = "{FolderName}"
 old_name_mo2_release = "{MO2ModName}"
 old_name_mo2_test = "{MO2ModNameTest}"
 old_name_plugin = "{PluginName}"
 old_name_plugin_short = "{PluginNameShort}"
 old_name_zip = "{ZipName}"
+old_nexus_account_id = "{NexusAccountID}"
 old_path_7Zip = "{Path7Zip}"
 old_path_md2nexus = "{Pathmd2nexus}"
 old_path_MO2Downloads = "{PathMO2Downloads}"
@@ -50,16 +56,21 @@ old_title_xml_short = "{TitleNameXMLShort}"
 # New Text:
 new_author_display = config_values_name["AuthorName"]
 new_author_github = config_values_ids["GitHubAccount"]
+new_contact_info = config_values_socials["ContactInfo"]
+new_discord_server = config_values_socials["DiscordServer"]
 new_id_github = config_values_ids["RepositoryName"]
 new_id_nexus = config_values_ids["NexusID"]
+new_kofi_account = config_values_socials["KofiAccount"]
 new_license_holder = config_values_license["LicensorName"]
 new_license_year = config_values_license["LicenseYear"]
+new_linktree_account = config_values_socials["LinktreeAccount"]
 new_name_folder = config_values_name["FolderName"]
 new_name_mo2_release = config_values_name["MO2ModName"]
 new_name_mo2_test = config_values_name["MO2ModNameTest"]
 new_name_plugin = config_values_name["PluginName"]
 new_name_plugin_short = config_values_name["PluginNameShort"]
 new_name_zip = config_values_name["ZipName"]
+new_nexus_account_id = config_values_socials["NexusAccountID"]
 new_path_7Zip = config_values_paths["Path7Zip"]
 new_path_md2nexus = config_values_paths["Pathmd2nexus"]
 new_path_MO2Downloads = config_values_paths["PathMO2Downloads"]
@@ -83,6 +94,12 @@ print(os.getcwd())
 
 os.chdir("./_root")
 print(os.getcwd())
+
+with open(r'CODE_OF_CONDUCT.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_contact_info, new_contact_info)
+with open(r'CODE_OF_CONDUCT.md', 'w') as file:
+	file.write(data)
 
 with open(r'LICENSE.txt', 'r') as file:
 	data = file.read()
@@ -382,6 +399,19 @@ with open(r'description_brief.txt', 'r') as file:
 with open(r'description_brief.txt', 'w') as file:
 	file.write(data)
 
+with open(r'description_detailed.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+	data = data.replace(old_title_short, new_title_short)
+	data = data.replace(old_author_github, new_author_github)
+	data = data.replace(old_id_github, new_id_github)
+	data = data.replace(old_linktree_account, new_linktree_account)
+	data = data.replace(old_discord_server, new_discord_server)
+	data = data.replace(old_kofi_account, new_kofi_account)
+	data = data.replace(old_nexus_account_id, new_nexus_account_id)
+with open(r'description_detailed.md', 'w') as file:
+	file.write(data)
+
 os.chdir("../..")
 print(os.getcwd())
 
@@ -393,6 +423,19 @@ with open(r'description_brief.txt', 'r') as file:
 	data = file.read()
 	data = data.replace(old_title, new_title)
 with open(r'description_brief.txt', 'w') as file:
+	file.write(data)
+
+with open(r'description_detailed.bbcode', 'r') as file:
+	data = file.read()
+	data = data.replace(old_title, new_title)
+	data = data.replace(old_title_short, new_title_short)
+	data = data.replace(old_author_github, new_author_github)
+	data = data.replace(old_id_github, new_id_github)
+	data = data.replace(old_linktree_account, new_linktree_account)
+	data = data.replace(old_discord_server, new_discord_server)
+	data = data.replace(old_kofi_account, new_kofi_account)
+	data = data.replace(old_nexus_account_id, new_nexus_account_id)
+with open(r'description_detailed.bbcode', 'w') as file:
 	file.write(data)
 
 os.chdir("../..")
@@ -422,6 +465,13 @@ print(os.getcwd())
 
 os.chdir("./docs/wiki")
 print(os.getcwd())
+
+with open(r'_Footer.md', 'r') as file:
+	data = file.read()
+	data = data.replace(old_author_github, new_author_github)
+	data = data.replace(old_id_github, new_id_github)
+with open(r'_Footer.md', 'w') as file:
+	file.write(data)
 
 with open(r'_Sidebar.md', 'r') as file:
 	data = file.read()
@@ -544,6 +594,11 @@ print("Renaming Directories: Complete!")
 
 print("Moving Files: Starting...")
 print(os.getcwd())
+
+if (os.path.isfile("CODE_OF_CONDUCT.md")):
+	os.remove("CODE_OF_CONDUCT.md")
+	shutil.move("./_root/CODE_OF_CONDUCT.md", "./CODE_OF_CONDUCT.md")
+	print("moved CODE_OF_CONDUCT.md")
 
 if (os.path.isfile("LICENSE.txt")):
 	os.remove("LICENSE.txt")
