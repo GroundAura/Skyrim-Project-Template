@@ -68,10 +68,10 @@ Order doesn't matter.
 
 ### **\[font=Verdana\]Q2: What types of plugins are used?\[/font\]**
 
-- No plugins are included.
-- All plugins included are .esp/.esl/.esm with the ESL flag. This means the plugins count towards the ~4096 ESL limit, not the ~255 ESP limit.
-- Plugin header version is 1.70. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are not required.
-- Plugin header version is 1.71. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are required.
+- No .esp/.esl/.esm plugins are included in this mod.
+- All plugins included are .esp/.esl/.esm with the ESL flag. This means the plugins count towards the ~4096 ESL limit, not the ~255 ESP limit. If you are on VR, you will need [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) to make use of the ESL flag.
+- Plugin header version is 1.70. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are not required to use the plugins in this mod.
+- Plugin header version is 1.71. This means [BEES](https://www.nexusmods.com/skyrimspecialedition/mods/106441) for SE v1.5.97-1.6.659 (never required on v1.6.1130+) or [VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712/) for VR are required to use the plugins in this mod.
 
 ### **\[font=Verdana\]Q3: Does installing/updating/uninstalling on an existing save work?\[/font\]**
 
