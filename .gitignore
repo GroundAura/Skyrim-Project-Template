@@ -28,7 +28,10 @@ build/release/
 *snippets.*
 *temp.*
 ExampleScript.pex
-test.py
+test*.bat
+test*.ini
+test*.json
+test*.py
 
 # Dependencies #
 
