@@ -6,6 +6,7 @@
 *.pbd
 *.rar
 *.tar
+*.tar.gz
 *.wim
 *.xz
 *.zip
@@ -25,13 +26,11 @@ build/release/
 
 # Custom #
 *PluginName*MCM.pex
-*snippets.*
-*temp.*
+*snippets*.*
+*temp*.*
+*test*.*
+.vscode/settings.json
 ExampleScript.pex
-test*.bat
-test*.ini
-test*.json
-test*.py
 
 # Dependencies #
 
