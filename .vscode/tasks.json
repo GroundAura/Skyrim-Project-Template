@@ -54,13 +54,18 @@
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
 		},
 		{
-			"label": "Zip to build",
+			"label": "Compile description",
 			"group": "build",
 			"dependsOn": [
-				"Compile Papyrus Scripts (Release)",
-				"copy-img.bat",
-				"copy-pex.bat",
-				"zip.bat"
+				"md2nexus.bat"
+			]
+		},
+		{
+			"label": "Compile Papyrus scripts",
+			"group": "build",
+			"dependsOn": [
+				"Compile Papyrus Scripts (Debug)",
+				"Compile Papyrus Scripts (Release)"
 			]
 		},
 		{
@@ -73,17 +78,6 @@
 			]
 		},
 		{
-			"label": "Zip to MO2\\downloads",
-			"group": "build",
-			"dependsOn": [
-				"Compile Papyrus Scripts (Release)",
-				"copy-img.bat",
-				"copy-pex.bat",
-				"zip.bat",
-				"mo2-downloads.bat"
-			]
-		},
-		{
 			"label": "Copy to MO2\\mods",
 			"group": "build",
 			"dependsOn": [
@@ -93,18 +87,24 @@
 			]
 		},
 		{
-			"label": "Compile Papyrus scripts",
+			"label": "Zip to build",
 			"group": "build",
 			"dependsOn": [
-				"Compile Papyrus Scripts (Debug)",
-				"Compile Papyrus Scripts (Release)"
+				"Compile Papyrus Scripts (Release)",
+				"copy-img.bat",
+				"copy-pex.bat",
+				"zip.bat"
 			]
 		},
 		{
-			"label": "Compile description",
+			"label": "Zip to MO2\\downloads",
 			"group": "build",
 			"dependsOn": [
-				"md2nexus.bat"
+				"Compile Papyrus Scripts (Release)",
+				"copy-img.bat",
+				"copy-pex.bat",
+				"zip.bat",
+				"mo2-downloads.bat"
 			]
 		},
 		{
