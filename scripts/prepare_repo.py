@@ -12,11 +12,11 @@ print("Beginning preparing repository.")
 print("Setting Variables: Starting...")
 
 def read_config(file_path, section_header):
-    config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
-    config.read(file_path)
-    return config[section_header]
+	config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
+	config.read(file_path)
+	return config[section_header]
 
-config_path = './.vscode/variables.ini'
+config_path = './variables.ini'
 config_values_ids = read_config(config_path, 'IDs')
 config_values_license = read_config(config_path, 'License')
 config_values_name = read_config(config_path, 'Name')
