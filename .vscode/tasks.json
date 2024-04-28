@@ -109,10 +109,10 @@
 		},
 		{
 			"label": "Prepare Repository",
+			"group": "build",
 			"type": "shell",
 			"command": "${command:python.interpreterPath}",
-			"args": ["scripts\\prepare_repo.py"],
-			"group": "build"
+			"args": ["scripts\\prepare_repo.py"]
 		}
 	]
 }
