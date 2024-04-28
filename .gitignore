@@ -4,6 +4,7 @@
 *.dll
 *.gz
 *.pbd
+*.pyc
 *.rar
 *.tar
 *.tar.gz
@@ -16,6 +17,7 @@
 .build/old/
 .build/papyrus/
 .build/release/
+__pycache__/
 #build/
 build/**/*.pex
 build/(old)/
