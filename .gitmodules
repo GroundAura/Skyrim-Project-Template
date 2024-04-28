@@ -1,0 +1,3 @@
+[submodule "aurapy"]
+	path = aurapy
+	url = https://github.com/GroundAura/aurapy
