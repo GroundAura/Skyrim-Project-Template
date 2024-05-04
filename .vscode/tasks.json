@@ -6,14 +6,14 @@
 		{
 			"label": "Compile Papyrus Scripts (Debug)",
 			"type": "pyro",
-			"projectFile": ".vscode\\papyrus\\debug.ppj",
+			"projectFile": "src\\Papyrus\\project\\debug.ppj",
 			"gamePath": "${config:papyrus.skyrimSpecialEdition.installPath}",
 			"problemMatcher": ["$PapyrusCompiler"]
 		},
 		{
 			"label": "Compile Papyrus Scripts (Release)",
 			"type": "pyro",
-			"projectFile": ".vscode\\papyrus\\release.ppj",
+			"projectFile": "src\\Papyrus\\project\\release.ppj",
 			"gamePath": "${config:papyrus.skyrimSpecialEdition.installPath}",
 			"problemMatcher": ["$PapyrusCompiler"]
 		},
