@@ -6,21 +6,23 @@
 #ROOT_PATH: str = getcwd()
 #print(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts\aurapy")
 
-import sys
+#import sys
 #sys.path.append(join(ROOT_PATH, "scripts\\aurapy"))
 #sys.path.append(aurapy)
 #sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts\aurapy")
 #sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts")
 #sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template")
-sys.path.append('./scripts/aurapy')
+#sys.path.append('./scripts/aurapy')
 
-for i in sys.path:
-    print(f"path: {i}")
+#for i in sys.path:
+    #print(f"path: {i}")
 
 #import aura_config
 
 #from aura_config import read_config
 #from aura_files import copy_file, get_root_path
+
+import auralib
 
 
 
