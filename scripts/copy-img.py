@@ -1,41 +1,19 @@
-#copy "docs\images\brand\Main.png" "dist\{FolderName}\fomod\images"
-#import os
-#from os import getcwd
-#from os.path import join
-
-#ROOT_PATH: str = getcwd()
-#print(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts\aurapy")
-
-#import sys
-#sys.path.append(join(ROOT_PATH, "scripts\\aurapy"))
-#sys.path.append(aurapy)
-#sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts\aurapy")
-#sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template\scripts")
-#sys.path.append(r"C:\Games\Skyrim\Projects\My Projects\Skyrim-Project-Template")
-#sys.path.append('./scripts/aurapy')
-
-#for i in sys.path:
-    #print(f"path: {i}")
-
-#import aura_config
-
-#from aura_config import read_config
-#from aura_files import copy_file, get_root_path
-
-import auralib
-
-
+from os.path import join
+from auralib.config import read_config
+from auralib.files import get_root_path, copy_file
 
 
 def main():
-	print("test")
-	#CONFIG_PATH: str = join(ROOT_PATH, "Project_Settings.ini")
-	#config: dict[str, dict[str]] = read_config(CONFIG_PATH)
-	#print(f"\nConfig ({CONFIG_PATH}):\n{config}")
-	#FolderName: str = config["PROJECT"]["sprojectnamefolder"]
-
-	#print(f"FolderName: {FolderName}")
-	#copy_file(join(ROOT_PATH, "docs\\images\\brand\\Main.png)"), (join(ROOT_PATH, "dist", FolderName, "fomod\\images\\Main.png")))
+	print(f"STATUS: Starting Task: Copy Image...")
+	try:
+		ROOT_PATH: str = get_root_path()
+		CONFIG_PATH: str = join(ROOT_PATH, "Project_Settings.ini")
+		config: dict[str, dict[str]] = read_config(CONFIG_PATH, preserve_key_case=True)
+		copy_file(join(ROOT_PATH, "docs\\images\\brand\\Main.png"), (join(ROOT_PATH, "dist", config["PROJECT"]["sProjectNameFolder"], "fomod\\images\\Main.png")))
+		print(f"INFO: Copied image successfully.")
+		print(f"STATUS: Completed Task: Copy Image.")
+	except Exception as e:
+		print(f"STATUS: Failed Task: Copy Image.\nERROR: {e}")
 
 
 if __name__ == "__main__":

@@ -18,37 +18,37 @@
 			"problemMatcher": ["$PapyrusCompiler"]
 		},
 		{
-			"label": "copy-img.bat",
+			"label": "copy-img",
 			"type": "shell",
-			"command": "scripts\\copy-img.bat",
-			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+			"command": "${command:python.interpreterPath}",
+			"args": ["scripts\\copy-img.py"]
 		},
 		{
-			"label": "copy-pex.bat",
+			"label": "copy-pex",
 			"type": "shell",
 			"command": "scripts\\copy-pex.bat",
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
 		},
 		{
-			"label": "md2nexus.bat",
+			"label": "md2nexus",
 			"type": "shell",
 			"command": "scripts\\md2nexus.bat",
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
 		},
 		{
-			"label": "mo2-downloads.bat",
+			"label": "mo2-downloads",
 			"type": "shell",
 			"command": "scripts\\mo2-downloads.bat",
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
 		},
 		{
-			"label": "mo2-mod.bat",
+			"label": "mo2-mod",
 			"type": "shell",
 			"command": "scripts\\mo2-mod.bat",
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
 		},
 		{
-			"label": "zip.bat",
+			"label": "zip",
 			"type": "shell",
 			"command": "scripts\\zip.bat",
 			"presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
@@ -57,7 +57,7 @@
 			"label": "Compile description",
 			"group": "build",
 			"dependsOn": [
-				"md2nexus.bat"
+				"md2nexus"
 			]
 		},
 		{
@@ -73,8 +73,8 @@
 			"group": "build",
 			"dependsOn": [
 				"Compile Papyrus Scripts (Release)",
-				"copy-img.bat",
-				"copy-pex.bat"
+				"copy-img",
+				"copy-pex"
 			]
 		},
 		{
@@ -82,8 +82,8 @@
 			"group": "build",
 			"dependsOn": [
 				"Compile Papyrus Scripts (Release)",
-				"copy-pex.bat",
-				"mo2-mod.bat"
+				"copy-pex",
+				"mo2-mod"
 			]
 		},
 		{
@@ -91,9 +91,9 @@
 			"group": "build",
 			"dependsOn": [
 				"Compile Papyrus Scripts (Release)",
-				"copy-img.bat",
-				"copy-pex.bat",
-				"zip.bat"
+				"copy-img",
+				"copy-pex",
+				"zip"
 			]
 		},
 		{
@@ -101,10 +101,10 @@
 			"group": "build",
 			"dependsOn": [
 				"Compile Papyrus Scripts (Release)",
-				"copy-img.bat",
-				"copy-pex.bat",
-				"zip.bat",
-				"mo2-downloads.bat"
+				"copy-img",
+				"copy-pex",
+				"zip",
+				"mo2-downloads"
 			]
 		},
 		{
